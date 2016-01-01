@@ -1,0 +1,57 @@
+3.8104 	WARNING 	Movie2 stim could not be imported and won't be available
+3.9653 	WARNING 	TextBox stim could not be imported and won't be available.
+3.9653 	WARNING 	TextBox Font Manager Found No Fonts.
+6.7894 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([ 0.,  0.,  0.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor instance at 0xb8b56e8>, name='window1', pos=[0, 0], screen=0, size=array([1280,  800]), stereo=False, units=u'norm', useFBO=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.7895 	EXP 	window1: recordFrameIntervals = False
+6.9541 	EXP 	window1: recordFrameIntervals = True
+7.1374 	EXP 	window1: recordFrameIntervals = False
+7.3132 	EXP 	Created instructions_practice = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='instructions_practice', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=unicode(...), units=u'norm', win=Window(...), wrapWidth=1)
+7.3165 	EXP 	Created image_practice = ImageStim(autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_practice', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), size=array([ 0.5,  0.5]), texRes=128, units=u'norm', win=Window(...))
+7.3250 	EXP 	Created feedback = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='feedback', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.3281 	EXP 	Created image_trial = ImageStim(autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_trial', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), size=array([ 0.5,  0.5]), texRes=128, units=u'norm', win=Window(...))
+7.3364 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'Thanks for participating', units=u'norm', win=Window(...), wrapWidth=1)
+7.3530 	EXP 	instructions_practice: autoDraw = True
+13.9880 	DATA 	Keypress: space
+14.0484 	EXP 	Imported images/datafile.xlsx as conditions, 10 conditions, 2 params
+14.0490 	EXP 	Created sequence: random, trialTypes=10, nReps=5, seed=None
+14.0681 	EXP 	New trial (rep=0, index=0): {u'correct_ans': u'right', u'images': u'images/cat_eyes.jpeg'}
+14.1203 	EXP 	instructions_practice: autoDraw = False
+14.1203 	EXP 	image_practice: image = u'images/cat_eyes.jpeg'
+14.1203 	EXP 	image_practice: autoDraw = True
+15.8167 	DATA 	Keypress: right
+15.8495 	EXP 	image_practice: autoDraw = False
+15.8495 	EXP 	feedback: text = "No you fool! That's not right!"
+15.8495 	EXP 	feedback: autoDraw = True
+16.8148 	EXP 	New trial (rep=0, index=1): {u'correct_ans': u'right', u'images': u'images/rat_cat.jpeg'}
+16.8804 	EXP 	feedback: autoDraw = False
+16.8804 	EXP 	feedback: autoDraw = False
+16.8804 	EXP 	image_practice: image = u'images/rat_cat.jpeg'
+16.8804 	EXP 	image_practice: autoDraw = True
+17.6460 	DATA 	Keypress: right
+17.6785 	EXP 	image_practice: autoDraw = False
+17.6785 	EXP 	feedback: text = "No you fool! That's not right!"
+17.6785 	EXP 	feedback: autoDraw = True
+18.6432 	EXP 	New trial (rep=0, index=2): {u'correct_ans': u'up', u'images': u'images/marshmallow_hog.jpeg'}
+18.6591 	EXP 	feedback: autoDraw = False
+18.6591 	EXP 	feedback: autoDraw = False
+18.6591 	EXP 	image_practice: image = u'images/marshmallow_hog.jpeg'
+18.6591 	EXP 	image_practice: autoDraw = True
+19.6571 	DATA 	Keypress: up
+19.6732 	EXP 	image_practice: autoDraw = False
+19.6732 	EXP 	feedback: text = "No you fool! That's not right!"
+19.6732 	EXP 	feedback: autoDraw = True
+20.6556 	EXP 	New trial (rep=0, index=3): {u'correct_ans': u'left', u'images': u'images/gorilla_face.jpeg'}
+20.7212 	EXP 	feedback: autoDraw = False
+20.7212 	EXP 	feedback: autoDraw = False
+20.7212 	EXP 	image_practice: image = u'images/gorilla_face.jpeg'
+20.7212 	EXP 	image_practice: autoDraw = True
+21.5698 	DATA 	Keypress: left
+21.5858 	EXP 	image_practice: autoDraw = False
+21.5858 	EXP 	feedback: text = "No you fool! That's not right!"
+21.5858 	EXP 	feedback: autoDraw = True
+22.5679 	EXP 	New trial (rep=0, index=4): {u'correct_ans': u'left', u'images': u'images/gorilla_tongue.jpeg'}
+22.6001 	EXP 	feedback: autoDraw = False
+22.6001 	EXP 	feedback: autoDraw = False
+22.6001 	EXP 	image_practice: image = u'images/gorilla_tongue.jpeg'
+22.6001 	EXP 	image_practice: autoDraw = True
+22.8337 	DATA 	Keypress: escape
