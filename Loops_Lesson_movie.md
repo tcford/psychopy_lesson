@@ -1,10 +1,10 @@
-# Looping through conditions
+#  Looping through conditions
 
 Now that we have our movie structure:
 
 ![Paradigm structure](./gui_shots/Flow.png)
 
-we can add the movie's scene *Components*.
+We can add the movie's scene components.
 
 Click on *Stimulus* in the **Flow** to open the scene, then click <img src="./gui_shots/image.png" alt="Drawing" style="width: 30px;"/> in the **Components** panel.  
 A box pops up with several options for the image. Notice the default duration of an image is 1 second.
@@ -83,4 +83,3 @@ Your scene should now look like this:
 Let's do it! Click <img src="./gui_shots/run.png" alt="Drawing" style="width: 20px;"/>
 
 # Data time!
-
