@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy2 Experiment Builder (v1.81.03), Fri  8 Jan 12:54:05 2016
+This experiment was created using PsychoPy2 Experiment Builder (v1.83.03), Tue  2 Feb 11:06:18 2016
 If you publish work using this script please cite the relevant PsychoPy publications
   Peirce, JW (2007) PsychoPy - Psychophysics software in Python. Journal of Neuroscience Methods, 162(1-2), 8-13.
   Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy. Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
@@ -34,7 +34,7 @@ filename = _thisDir + os.sep + 'data/%s_%s_%s' %(expInfo['participant'], expName
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath=u'/Users/talithaford/Desktop/TalithasFiles/NeuralCodeTF/psychopy_lesson/visneuro.psyexp',
+    originPath=u'/Users/talithaford/Dropbox/Conference-Workshop/ResBaz/2016/psychopy_lesson/ResBaz_lesson.psyexp',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 #save a log file for detail verbose info
@@ -159,7 +159,7 @@ for thisComponent in InstructionsComponents:
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-loop = data.TrialHandler(nReps=1, method='random', 
+loop = data.TrialHandler(nReps=5, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('images/datafile.xlsx'),
     seed=None, name='loop')
@@ -262,7 +262,7 @@ for thisLoop in loop:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 1 repeats of 'loop'
+# completed 5 repeats of 'loop'
 
 
 #------Prepare to start Routine "Thanks"-------

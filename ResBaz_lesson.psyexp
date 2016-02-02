@@ -143,7 +143,7 @@
       <Param name="isTrials" val="True" valType="bool" updates="None"/>
       <Param name="random seed" val="" valType="code" updates="None"/>
       <Param name="loopType" val="random" valType="str" updates="None"/>
-      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="nReps" val="5" valType="code" updates="None"/>
       <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
       <Param name="conditions" val="[{u'correct_ans': u'left', u'images': u'images/gorilla_face.jpeg'}, {u'correct_ans': u'left', u'images': u'images/gorilla_fat.jpeg'}, {u'correct_ans': u'left', u'images': u'images/gorilla_tongue.jpeg'}, {u'correct_ans': u'right', u'images': u'images/cat_eyes.jpeg'}, {u'correct_ans': u'right', u'images': u'images/ear_muffs_cat.jpeg'}, {u'correct_ans': u'right', u'images': u'images/rat_cat.jpeg'}, {u'correct_ans': u'up', u'images': u'images/egg_hog.jpeg'}, {u'correct_ans': u'up', u'images': u'images/icecream_hog.jpeg'}, {u'correct_ans': u'up', u'images': u'images/marshmallow_hog.jpeg'}, {u'correct_ans': u'up', u'images': u'images/santa_hog.jpeg'}]" valType="str" updates="None"/>
       <Param name="Selected rows" val="" valType="str" updates="None"/>

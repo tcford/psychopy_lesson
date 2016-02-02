@@ -1,4 +1,5 @@
 #  Looping through conditions
+-
 
 Now that we have our movie structure:
 
@@ -10,7 +11,7 @@ Click on *Stimulus* in the **Flow** to open the scene, then click <img src="./gu
 A box pops up with several options for the image. Notice the default duration of an image is 1 second.
 
 In the *Image* dialoge box, we need tell *Psychopy* where to look for this component of the scene.  
-In your *Psychopy* folder, there is a subdirectory called *'images'*. This subdirectory holds the images that can be used in this component. Lets use the cat_eyes.jpeg file. In the *Image* dialoge box, enter the path to the file like so:  
+In your *Psychopy* folder, there is a subdirectory called *'images'*. This subdirectory holds images that can be used in for this scene. Lets use the cat_eyes.jpeg file. In the *Image* dialoge box, enter the path to the file like so:  
 ![image path](./gui_shots/image_path1.png)
 Click OK
 
@@ -39,6 +40,8 @@ Click again on the <img src="./gui_shots/image.png" alt="Drawing" style="width: 
 ![image path](./gui_shots/stim_complete.png)
 
 We now have instructions and a scene that flashes for 1 second 5 times, and we can record a response. Click <img src="./gui_shots/run.png" alt="Drawing" style="width: 20px;"/>
+
+Lets check out the data.
  
 This is good, but we can also loop through different scenes. 
 
@@ -68,13 +71,13 @@ To tell *Psychopy* where to look for the datafile, click on *trials* in the **Fl
 
 ![properties icon](./gui_shots/loop_prop.png)
 
-Now, to tell *Psychopy* to deliver the images from this list, click on *Stimulus* in the **Flow**, and the <img src="./gui_shots/image.png" alt="Drawing" style="width: 30px;"/>. In the *Image* box, type '$images'. The $ tells *Psychopy* to look for the column called *images* in the excel spreadsheet. Change the associated dropdown box to *set every repeat*. The image Properties should look like this:  
+Now, to tell *Psychopy* to deliver the images from this list, click on *Stimulus* in the **Flow**, and the <img src="./gui_shots/image.png" alt="Drawing" style="width: 30px;"/>. In the *Image* box, type '\$images'. The \$ tells *Psychopy* to look for the column called *images* in the excel spreadsheet. Change the associated dropdown box to *set every repeat*. The image Properties should look like this:  
 ![properties icon](./gui_shots/image_prop.png)
 Click OK.
 
-We now need to record the amount of money received following pizza delivery, or the button press recieved following the image delivery. Click the <img src="./gui_shots/keyboard.png" alt="Drawing" style="width: 30px;"/> and type ' 'left', 'right', 'up' ' into *Allowed keys*. In the *Store* dropdown, select *first key*, and change the *Start* to 0.5 as shown below.
+We now need to record the amount of money received following pizza delivery, or the button press recieved following the image delivery. Click the <img src="./gui_shots/keyboard.png" alt="Drawing" style="width: 30px;"/> and type ' 'left', 'right', 'up' ' into *Allowed keys*. In the *Store* dropdown, select *first key*. Finally, click the box to *Store correct* and enter '\$correct_ ans' in the *Correct answer* box. As with the image properties, this tells *PsychoPy* to look in the correct_ans column in the excel spreadsheet. Your Properties should resemble the image below.
 
-![properties icon](./gui_shots/keyboard_prop.png)
+![properties icon](./gui_shots/cor_ans.png)
 
 Your scene should now look like this:
 
