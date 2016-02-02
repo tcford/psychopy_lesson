@@ -1,49 +1,64 @@
-# Looping through conditions
+![Paradigm structure](./psychopyDocBanner2.gif)
 
-Now that we have our basic structure:
+#  Looping through conditions
+-
+
+Now that we have our movie structure:
 
 ![Paradigm structure](./gui_shots/Flow.png)
 
-We can go on to add the stimulus to the experiment.
+We can add the movie's scene components.
 
-Click on 'Stimulus' in the Flow, and click on the <img src="./gui_shots/image.png" alt="Drawing" style="width: 30px;"/> in the Components panel. 
-You can see several options for this image. You should see that the duration of image is 1sec.
+Click on *Stimulus* in the **Flow** to open the scene, then click <img src="./gui_shots/image.png" alt="Drawing" style="width: 30px;"/> in the **Components** panel.  
+A box pops up with several options for the image. Notice the default duration of an image is 1 second.
 
-In this lesson, you will learn how import images as your stimuli. Lets start with an example of one image.
-
-In the folder on your desktop, you will see a subdirectory called 'images'. The 'images' directory holds the images for this experiment.
-
-In the Image dialoge box, we need to type the path to the image that we want to display. Lets use the cat_eyes.jpeg file. Enter the path to the file like so:  
+In the *Image* dialoge box, we need tell *Psychopy* where to look for this component of the scene.  
+In your *Psychopy* folder, there is a subdirectory called *'images'*. This subdirectory holds images that can be used in for this scene. Lets use the cat_eyes.jpeg file. In the *Image* dialoge box, enter the path to the file like so:  
 ![image path](./gui_shots/image_path1.png)
+Click OK
 
-We can test to see if this works by running the experiment. Click OK and then the Run icon <img src="./gui_shots/run.png" alt="Drawing" style="width: 20px;"/>
+We can test to see if this works by running the movie. Click the Run icon <img src="./gui_shots/run.png" alt="Drawing" style="width: 20px;"/> on the top right of the *Psychopy* window. Enter '001' as the participant number.
 
-In the directory the experiment is saved in, you will now see a 'Data' directory. This is where the output saves. Click on the .csv to see what is inside.
+In your *Psychopy* directory, you will now see a *'data'* subdirectory with the data saved in the form of 001_filename_date.csv. We will discuss the contents of the .csv later.
 
-This works fine, but what if you want to see the image more than once?
+The movie works, but usually there are many scenes in a movie, and in psychological experiments the scene is often repeated.
 
-Click the 'Insert Loop' button in the Flow panel.
-Click the first dot just after the Stimulus and the second dot just before it. Again, a dialog box apears with several options. We can use the defaults to test the loop.
+In the **Flow**, click the *Insert Loop* button.
+Click the first dot immediately following *Stimulus* and the second dot immediately before it. A dialog box apears with several options. Name it 'trials', the stimulus will loop 5 times by default.  
+Run <img src="./gui_shots/run.png" alt="Drawing" style="width: 20px;"/> the experiment again.
 
-It appears there was only one presentation of the cat, but actually, the cat was repeated 5 times at 1 second each. We need to include an interstimulus interval to separate the images.
+You will have noticed that there was only one presentation of the kitten scene, any idea why? The kitten scene was actually presented for 1 second, 5 times, but there was no gap between the scenes. 
 
-In the Components panel, click Custom then Static Properties. The default is 500ms, which is fine. Click OK and you will see a pink shaded area for 500ms.
-We want it to start before the stimulus, so change the start time of the image to 0.5 and the duration to 1.0. 
+An interstimulus interval (ISI) is required to separate each scene. In the **Components** panel, click *Custom* then the <img src="./gui_shots/ISI_button.png" alt="Drawing" style="width: 30px;"/>. The default ISI is 0.5 seconds. Click OK, there is now a pink shaded area for 0.5 seconds.  
+Put the ISI before the image by changing the start time of the <img src="./gui_shots/image.png" alt="Drawing" style="width: 30px;"/> to 0.5 and the duration to 1.0. 
 ![image path](./gui_shots/ISI.png)
-Run the experiment again, click <img src="./gui_shots/run.png" alt="Drawing" style="width: 20px;"/>
+Run <img src="./gui_shots/run.png" alt="Drawing" style="width: 20px;"/> the movie again.
 
-So we have a stimulus, but what about a response? Let's add a button press for reaction time and accuracy.
-Click on the <img src="./gui_shots/keyboard.png" alt="Drawing" style="width: 30px;"/> in the Components panel. There are several options again, type 'space' into the 'Allowed keys' box to indicate a response by spacebar press.
+So we have 5 scene presentations, but what about recording a response? Let's add a button press for reaction time and accuracy.  
+Click on the <img src="./gui_shots/keyboard.png" alt="Drawing" style="width: 30px;"/> in the **Components** panel. There are several options again, type 'space' into the *Allowed keys* box to indicate a response by spacebar press. Click OK and the key response appears in the workspace.
 
-Click again on the <img src="./gui_shots/image.png" alt="Drawing" style="width: 30px;"/>in the workspace, and change the duration of the instructions presentation to 0. Now the picture will be presented until the spacebar is pressed. 
+Click again on the <img src="./gui_shots/image.png" alt="Drawing" style="width: 30px;"/> in the scene, and change the duration of the image to 0. Now the picture will be presented until the spacebar is pressed.
 
-The icon now appears in the workspace.
+![image path](./gui_shots/stim_complete.png)
 
-![image path](./gui_shots/instr_complete.png)
+We now have instructions and a scene that flashes for 1 second 5 times, and we can record a response. Click <img src="./gui_shots/run.png" alt="Drawing" style="width: 20px;"/>
 
-We now have instructions and a stimulus that flashes for 1 second 5 times. Often in behavioural neuroscience and psychology we are interested in response time and accuracy, and the difference between different types of stimuli.
+Lets check out the data.
+ 
+This is good, but we can also loop through different scenes. 
 
-In Psychopy we can add different stimuli to the loop. In this example we will use images of gorillas, kittens and hedgehogs. The instructions will be:  
+Let's use a new example. Imagine that *Psychopy* is in the pizza delivery business.  
+*Psychopy* needs to collect the pizza order and deliver it to the customer, then receive the money. *Psychopy* looks at the list of pizzas to be delivered, and delivers each in turn until there are no more. Similarly, *Psychopy* can collect an image from a list, deliver it to the participant, and then receives a response, continuing until the list is done.
+
+This list can be saved to an excel spreadsheet. In your *images* subdirectory, there is a file called datafile.xlsx. This contains a ready-made list.
+
+![properties icon](./gui_shots/spreadsheet.png)
+
+Like the path we entered to the kitten image earlier, the column *images* has a list of paths to images.  
+There are additional columns in the spreadsheet, in the pizza example, these can be thought of as the drink and a dessert that accompany the pizza. The drink and dessert in each row are specific to the pizza in that row.
+
+Lets set it up. In this example we will use images of gorillas, kittens and hedgehogs. The instructions are:
+
 *You will see pictures*
 
 *Press left for gorillas*  
@@ -52,33 +67,24 @@ In Psychopy we can add different stimuli to the loop. In this example we will us
 
 *Press spacebar to continue*
 
-Click on the <img src="./gui_shots/text.png" alt="Drawing" style="width: 30px;"/> icon in Instructions and type the above into the 'Text' box.
+Click on *Instructions* in the **Flow**, and select <img src="./gui_shots/text.png" alt="Drawing" style="width: 30px;"/>. Type the above into the *Text* box.
 
-Now we need the images. To do this, you can set up an excel or csv with each column representing a condition.
-![excel image](./gui_shots/spreadsheet.png)  
-The first column indicates the correct response, the second is the directory path to the image file, and the third is the category or type of the image.
-
-Psychopy can read this file to select the images, rather than us having to include each stimulus individually. To tell Psychopy where to look for this spreadsheet, make sure it is located in the images folder along with all of the images used in this experiment.
-
-Then click on the loop icon in the Flow and in the dialog box that appears type the directory path from where your experiment is saved to where the spreadsheet is saved. In this case, from the experiment the path to the spreadsheet is 'images/datafile.xlsx'. You can also click the 'Browse...' button to search and select the file. Psychopy recognises the file if below there is a summary of what is included. Here, we have 10 conditions (images) with 2 parameters (correct answer and image type).
+To tell *Psychopy* where to look for the datafile, click on *trials* in the **Flow** and select *Browse...*. Select the datafile.xlsx and hit OK. The path to the file is now in the dialog box, and below there will be a summary of what is included. In this spreadsheet there are 10 rows (conditions) with 3 columns (parameters) as shown below.
 
 ![properties icon](./gui_shots/loop_prop.png)
 
-Now, to communicate this loop to the stimus that will be presented, click on Stimulus in the Flow, and the <img src="./gui_shots/image.png" alt="Drawing" style="width: 30px;"/>. In the Image box, we now need to point to the excel file that was loaded in to the loop. Type '$images' into the dialog box. The $ tells Psychopy to look in the spreadsheet for the column 'images' **(I forget how to explain this)**. Change the associated dropdown box to 'set every repeat'. Click OK.
+Now, to tell *Psychopy* to deliver the images from this list, click on *Stimulus* in the **Flow**, and the <img src="./gui_shots/image.png" alt="Drawing" style="width: 30px;"/>. In the *Image* box, type '\$images'. The \$ tells *Psychopy* to look for the column called *images* in the excel spreadsheet. Change the associated dropdown box to *set every repeat*. The image Properties should look like this:  
 ![properties icon](./gui_shots/image_prop.png)
+Click OK.
 
+We now need to record the amount of money received following pizza delivery, or the button press recieved following the image delivery. Click the <img src="./gui_shots/keyboard.png" alt="Drawing" style="width: 30px;"/> and type ' 'left', 'right', 'up' ' into *Allowed keys*. In the *Store* dropdown, select *first key*. Finally, click the box to *Store correct* and enter '\$correct_ ans' in the *Correct answer* box. As with the image properties, this tells *PsychoPy* to look in the correct_ans column in the excel spreadsheet. Your Properties should resemble the image below.
 
-We now need a response key press for the images. Click the <img src="./gui_shots/keyboard.png" alt="Drawing" style="width: 30px;"/>, and type ''left','right','up'' into 'Allowed keys'. In the 'Store' drop-down, select 'first key', and 'Start' to 0.5.
+![properties icon](./gui_shots/cor_ans.png)
 
-![properties icon](./gui_shots/keyboard_prop.png)
-
-Finally, click the <img src="./gui_shots/image.png" alt="Drawing" style="width: 30px;"/> and delete the time limit in the 'Stop' dialog box.
-
-Your Stimulus should look like this:
+Your scene should now look like this:
 
 ![image path](./gui_shots/stim_complete.png)
 
 Let's do it! Click <img src="./gui_shots/run.png" alt="Drawing" style="width: 20px;"/>
 
 # Data time!
-
