@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy2 Experiment Builder (v1.83.03), Tue  2 Feb 11:06:18 2016
+This experiment was created using PsychoPy2 Experiment Builder (v1.83.03), Tue  2 Feb 12:18:18 2016
 If you publish work using this script please cite the relevant PsychoPy publications
   Peirce, JW (2007) PsychoPy - Psychophysics software in Python. Journal of Neuroscience Methods, 162(1-2), 8-13.
   Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy. Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
@@ -227,6 +227,11 @@ for thisLoop in loop:
                 if key_resp_3.keys == []:  # then this was the first keypress
                     key_resp_3.keys = theseKeys[0]  # just the first key pressed
                     key_resp_3.rt = key_resp_3.clock.getTime()
+                    # was this 'correct'?
+                    if (key_resp_3.keys == str(correct_ans)) or (key_resp_3.keys == correct_ans):
+                        key_resp_3.corr = 1
+                    else:
+                        key_resp_3.corr = 0
                     # a response ends the routine
                     continueRoutine = False
         
@@ -254,8 +259,12 @@ for thisLoop in loop:
     # check responses
     if key_resp_3.keys in ['', [], None]:  # No response was made
        key_resp_3.keys=None
+       # was no response the correct answer?!
+       if str(correct_ans).lower() == 'none': key_resp_3.corr = 1  # correct non-response
+       else: key_resp_3.corr = 0  # failed to respond (incorrectly)
     # store data for loop (TrialHandler)
     loop.addData('key_resp_3.keys',key_resp_3.keys)
+    loop.addData('key_resp_3.corr', key_resp_3.corr)
     if key_resp_3.keys != None:  # we had a response
         loop.addData('key_resp_3.rt', key_resp_3.rt)
     # the Routine "picture" was not non-slip safe, so reset the non-slip timer

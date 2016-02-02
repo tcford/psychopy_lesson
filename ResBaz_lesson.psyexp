@@ -118,8 +118,8 @@
         <Param name="size" val="[0.5, 0.5]" valType="code" updates="constant"/>
       </ImageComponent>
       <KeyboardComponent name="key_resp_3">
-        <Param name="correctAns" val="" valType="str" updates="constant"/>
-        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="correctAns" val="$correct_ans" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="True" valType="bool" updates="constant"/>
         <Param name="name" val="key_resp_3" valType="code" updates="None"/>
         <Param name="stopVal" val="" valType="code" updates="constant"/>
         <Param name="durationEstim" val="" valType="code" updates="None"/>
