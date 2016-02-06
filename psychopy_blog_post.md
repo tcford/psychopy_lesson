@@ -14,7 +14,7 @@ To this:
 creating an experiment that tests response reaction time and accuracy to super serious image categories such as these.... 
 <img src="./images/gorilla_tongue.jpeg" style="width: 100px;"/> <img src="./images/ear_muffs_cat.jpeg" style="width: 80px;"/> <img src="./images/marshmallow_hog.jpeg" style="width: 80px;"/>
 
-Then, quick as a flash, Talitha was running through a quick analysis of the resulting .csv data file using the [iPython Notebook](http://ipython.org/notebook.html)! Amazing right? Want to know more? [Here is the  lesson]()
+Then, quick as a flash, Talitha was running through a quick analysis of the resulting .csv data file using the [iPython Notebook](http://ipython.org/notebook.html)! Amazing right? Want to know more? [Here is the  lesson](http://tcford.github.io/psychopy_lesson/)
 
 Thanks to all that attended the workshop, hopefully there will be more like it in the not to distant future.
 
