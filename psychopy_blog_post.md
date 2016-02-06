@@ -1,9 +1,9 @@
 <img src = "./psychopyDocBanner2.gif " style='width:200px';/>
 
 
- It was electives day at ResBaz, and maybe it was the crazy turn in weather or the extremely good food, but Brook ([@brookshiferaw](https://twitter.com/brookshiferaw)) <img src = "./brook_teaching.jpg" style='width:200px' align='right';/>and Talitha ([@TalithaCFord](https://twitter.com/TalithaCFord)) got all psycho with py! Well, not really, but they did share some pretty cool insights into the amazing world of [Psychopy](http://www.psychopy.org/)! 
+ <img src = "./brook_teaching.jpg" style='width:150px' align='right';/> It was electives day at ResBaz, and maybe it was the crazy turn in weather or the extremely good food, but Brook ([@brookshiferaw](https://twitter.com/brookshiferaw)) and Talitha ([@TalithaCFord](https://twitter.com/TalithaCFord)) got all psycho with py! Well, not really, but they did share some pretty cool insights into the amazing world of [Psychopy](http://www.psychopy.org/)! 
 
-Psychopy, as the name suggests, is a Python based software used for creating and running psychophysical, cognitive experiments. Psychopy is much more than just that though, and can be used to create a huge variety of stimuli and record a response. Great huh?! "But, I don't know Python!" we hear you say? Well, that's ok, because its a stand alone graphical user interface (GUI) with super intuitive click and drop options. Too good to be true? Nope, it's as true as the Research Bazaar is awesome.
+<img src = "./talitha_closeup.png" style='width:150px' align='left';/> Psychopy, as the name suggests, is a Python based software used for creating and running psychophysical, cognitive experiments. Psychopy is much more than just that though, and can be used to create a huge variety of stimuli and record a response. Great huh?! "But, I don't know Python!" we hear you say? Well, that's ok, because its a stand alone graphical user interface (GUI) with super intuitive click and drop options. Too good to be true? Nope, it's as true as the Research Bazaar is awesome.
 
 So, Brook and Talitha go to work, sharing the Psychopy love. They went from this:  
 <img src="./gui_shots/empty.png" style = 'width:300px;' />
