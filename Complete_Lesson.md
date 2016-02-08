@@ -7,7 +7,7 @@ Psychopy is a free software package written in the Python programming language f
 
 Setting up
 -
-*To be completed*
+*Coming soon, please be patient*
 
 Looping through conditions
 -
