@@ -17,7 +17,7 @@ In Psychopy, an experiment is like a movie which contains individual scenes and 
 
 We add a new scene by clicking on **Insert Routine**, naming our new routine then selecting where on the timeline we'd like it to be by clicking on the black dot.
 
-<img src="./gui_shots/new.png" alt="name scene" style="width: 100px;"/> <img src="./gui_shots/name.png" alt="name scene" style="width: 180px;"/> <img src="./gui_shots/insert.png" alt="insert scene" style="width: 120px;"/>
+<img src="./gui_shots/new.png" alt="name scene" style="width: 60px;"/> <img src="./gui_shots/name.png" alt="name scene" style="width: 90px;"/> <img src="./gui_shots/insert.png" alt="insert scene" style="width: 80px;"/>
 
 Each scene comes with its own working window that has its own timeline.
 
