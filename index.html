@@ -451,9 +451,45 @@ pre[class*="language-"] {
 
 <h2 id="toc_1">Setting up</h2>
 
-<p><em>Coming soon, please be patient</em></p>
+<p>An experiment within the fields of experimental psychology and cognitive neuroscience is a task designed to assess how we perceive and process specific types of information. Experimenters often <strong>deliver information</strong> and <strong>collect response</strong> to measure and analyse.</p>
 
-<h2 id="toc_2">Looping through conditions</h2>
+<h2 id="toc_2"><strong>Building an experiment with Psychopy</strong></h2>
+
+<p>In Psychopy, an experiment is like a movie which contains individual scenes and sets. Just like a movie a Psychopy experiment is made up of scenes called <strong>Routines</strong> which are contained within a timeline called <strong>Flow</strong>. </p>
+
+<p>We add a new scene by clicking on <strong>Insert Routine</strong>, naming our new routine then selecting where on the timeline we&#39;d like it to be by clicking on the black dot.</p>
+
+<p><img src="./gui_shots/new.png" alt="name scene" style="width: 100px;"/> <img src="./gui_shots/name.png" alt="name scene" style="width: 180px;"/> <img src="./gui_shots/insert.png" alt="insert scene" style="width: 120px;"/></p>
+
+<p>Each scene comes with its own working window that has its own timeline.</p>
+
+<p><img src="./gui_shots/scene1.png" alt="add scene" style="width: 405px;"/> </p>
+
+<p>Within each scene, we add items such as text, shapes, images, video and audio, which we can choose from the list of <strong>Components</strong> on the right side. The properties window that appears when we click on a component allows us to input things like duration, location, size and colour of the item we are adding to our scene. One of the most important features is adjusting the starting time and duration of the item.  We can either input how long we want the item to be displayed, or leave the duration blank (which means infinite) and add keyboard response so that it remains on the screen until the participants respond by pressing a designated key on the keyboard.</p>
+
+<p><img src="./gui_shots/components.png" alt="Drawing" style="width: 150px;"/> <img src="./gui_shots/properties.png" alt="Drawing" style="width: 200px;"/></p>
+
+<p>Now let us start building an experiment what contains an instruction, a stimulus and a thank you section.</p>
+
+<p>Insert Routine &gt; new &gt; &#39;Instruction&#39;</p>
+
+<p>Insert Routine &gt; new &gt; &#39;Stimulus&#39;</p>
+
+<p>Insert Routine &gt; new &gt; &#39;Thank you&#39;</p>
+
+<p><img src="./gui_shots/experiment.png" alt="Drawing" style="width: 400px;"/></p>
+
+<p>Once we have our scenes outlined, we can click on the first scene which is out <strong>Instruction</strong> and select the text icon from the <strong>Components</strong> on the right.  Here we can add our instruction for what we would like participants to do.  For example:</p>
+
+<p>&quot;Press the spacebar to start task.&quot;</p>
+
+<p>And we click on the keyboard icon on the right to add a keyboard response.  Remember to make the duration of the instruction text infinite so that the text remains on the screen until the spacebar is pressed.  </p>
+
+<p><img src="./gui_shots/instruct.png" alt="Drawing" style="width: 400px;"/></p>
+
+<p>Next... we will add our stimulus.</p>
+
+<h2 id="toc_3">Looping through conditions</h2>
 
 <p>Now that we have our movie structure:</p>
 
